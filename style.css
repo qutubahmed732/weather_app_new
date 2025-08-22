@@ -62,6 +62,7 @@ body {
     color: hsl(var(--text));
     outline: none;
     box-shadow: var(--shadow);
+    font-size: 16px;
 }
 
 .search input::placeholder {

@@ -14,8 +14,20 @@
 <body>
     <main class="app">
         <section class="search">
-            <input id="search" autofocus type="search" placeholder="Search city or use current location"
+            <input list="cities" id="search" autofocus type="text" placeholder="Search city or use current location"
                 aria-label="Search city" />
+            <datalist id="cities">
+                <option value="Karachi">
+                <option value="Islamabad">
+                <option value="Delhi">
+                <option value="Mumbai">
+                <option value="Dubai">
+                <option value="Doha">
+                <option value="Riyadh">
+                <option value="Istanbul">
+                <option value="Tehran">
+                <option value="London">
+            </datalist>
             <button id="searchBtn" title="UI only">Search</button>
         </section>
 
@@ -57,45 +69,6 @@
                     </div>
                 </div>
             </article>
-
-            
-            <!-- <div class="right">
-                <article class="card mini-map" aria-label="Map placeholder">
-                    <strong>Location Map</strong>
-                    <div class="fake-map" role="img" aria-label="Map placeholder"></div>
-                </article>
-
-                <article class="card forecast" aria-label="5-day forecast">
-                    <h3>5‑Day Forecast</h3>
-                    <div class="days">
-                        <div class="day">
-                            <div class="label">Fri</div>
-                            <div>⛅</div>
-                            <div><span class="hi">32°</span> / <span class="lo">27°</span></div>
-                        </div>
-                        <div class="day">
-                            <div class="label">Sat</div>
-                            <div>🌤️</div>
-                            <div><span class="hi">33°</span> / <span class="lo">28°</span></div>
-                        </div>
-                        <div class="day">
-                            <div class="label">Sun</div>
-                            <div>🌦️</div>
-                            <div><span class="hi">31°</span> / <span class="lo">26°</span></div>
-                        </div>
-                        <div class="day">
-                            <div class="label">Mon</div>
-                            <div>☁️</div>
-                            <div><span class="hi">30°</span> / <span class="lo">25°</span></div>
-                        </div>
-                        <div class="day">
-                            <div class="label">Tue</div>
-                            <div>🌧️</div>
-                            <div><span class="hi">29°</span> / <span class="lo">24°</span></div>
-                        </div>
-                    </div>
-                </article>
-            </div> -->
         </section>
     </main>
 

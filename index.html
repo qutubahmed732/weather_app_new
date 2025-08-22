@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App UI (HTML + CSS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app">
+        <section class="search">
+            <input id="search" autofocus type="search" placeholder="Search city or use current location"
+                aria-label="Search city" />
+            <button id="searchBtn" title="UI only">Search</button>
+        </section>
+
+        <section class="grid">
+            <article class="card current" aria-label="Current weather">
+                <div class="visual">
+                    <div style="text-align:center">
+                        <div class="big-temp"><span class="main_temp">0</span>°</div>
+                        <div class="condition">Partly Cloudy</div>
+                        <div class="location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span class="city">Karachi</span>, <span class="country">PK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <h2>Today</h2>
+                    <div class="kpis">
+                        <div class="kpi" title="Feels like">
+                            <span>Feels</span>
+                            <strong class="feels">29°</strong>
+                        </div>
+                        <div class="kpi" title="Humidity">
+                            <span>Humidity</span>
+                            <strong class="humidity">68%</strong>
+                        </div>
+                        <div class="kpi" title="Wind">
+                            <span>Wind</span>
+                            <strong class="speed">14 km/h</strong>
+                        </div>
+                        <div class="kpi" title="UV Index">
+                            <span>UV</span>
+                            <strong>6</strong>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            
+            <!-- <div class="right">
+                <article class="card mini-map" aria-label="Map placeholder">
+                    <strong>Location Map</strong>
+                    <div class="fake-map" role="img" aria-label="Map placeholder"></div>
+                </article>
+
+                <article class="card forecast" aria-label="5-day forecast">
+                    <h3>5‑Day Forecast</h3>
+                    <div class="days">
+                        <div class="day">
+                            <div class="label">Fri</div>
+                            <div>⛅</div>
+                            <div><span class="hi">32°</span> / <span class="lo">27°</span></div>
+                        </div>
+                        <div class="day">
+                            <div class="label">Sat</div>
+                            <div>🌤️</div>
+                            <div><span class="hi">33°</span> / <span class="lo">28°</span></div>
+                        </div>
+                        <div class="day">
+                            <div class="label">Sun</div>
+                            <div>🌦️</div>
+                            <div><span class="hi">31°</span> / <span class="lo">26°</span></div>
+                        </div>
+                        <div class="day">
+                            <div class="label">Mon</div>
+                            <div>☁️</div>
+                            <div><span class="hi">30°</span> / <span class="lo">25°</span></div>
+                        </div>
+                        <div class="day">
+                            <div class="label">Tue</div>
+                            <div>🌧️</div>
+                            <div><span class="hi">29°</span> / <span class="lo">24°</span></div>
+                        </div>
+                    </div>
+                </article>
+            </div> -->
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

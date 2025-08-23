@@ -38,7 +38,7 @@ body {
         hsl(var(--bg));
     display: grid;
     place-items: center;
-    padding: 28px;
+    padding: 10px;
 }
 
 .app {
